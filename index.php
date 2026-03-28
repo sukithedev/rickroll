@@ -2,7 +2,7 @@
 session_start();
 
 /* 🔒 Passwort hier festlegen */
-$PASSWORD = 'SecretMerch';
+$PASSWORD = '(füge hier das Passwort ein)';
 
 /* Falls Formular abgeschickt */
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['access'] = true;
 
         // Weiterleitung zu externer Seite
-        header('Location: https://r.mtdv.me/sukishop');
+        header('Location: (füge hier den Link ein)');
         exit;
     } else {
         $error = 'Falsches Passwort';
